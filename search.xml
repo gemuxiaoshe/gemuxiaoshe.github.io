@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[基于hexo+github搭建个人博客]]></title>
+    <url>%2F2018%2F04%2F20%2F%E5%9F%BA%E4%BA%8Ehexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%2F</url>
+    <content type="text"><![CDATA[前言 1.github pages服务生成的全是静态文件，访问速度快；2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；3.可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；4.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；5.博客内容可以轻松打包、转移、发布到其它平台； hexo、git配置和安装什么是hexo？ Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装安装hexo只需要几分钟，但前提是你的确保你的电脑中已经安装了下列应用程序： 下载必须程序 node.js Node.js是一个Javascript运行环境(runtime) Git Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。从上面链接下载git for windows最好挂一个代理，否则下载速度会十分缓慢，你可以参考这个页面,其中收录了存储于百度云的下载地址。 下载之后你可以在你想要创建博客的位置新建一个文件夹，进行node.js和git的安装，打开安装包，按顺序安装即可。安装完成后可以打开cmd命令行检查是否安装完成： hexo安装 打开git命令行输入以下代码安装hexo1$ npm install -g hexo-cli 建站安装好hexo后执行下列操作来生成所需要的文件 初始化 在你的电脑选取一个你想要存放这个网页的代码的文件夹，然后在里面新建一个hexo文件夹。 在git命令行中输入：12$ cd /d/网页设计/hexo$ hexo init 下载完成后，会在对应的hexo文件中自动生成对应文件。 生成文件和启用预览服务在git命令行中输入以下命令：12$ hexo g # 生成$ hexo s # 启动服务 会在public文件中生成相关的HTML文件。 用来启用本地预览服务，启用后就可以通过http://localhost:4000/来预览博客内容。如果一切顺利，访问以上预览链接应当出现这样的一个默认博客主页。至这一步，一个基于hexo的blog就搭建完成了。 如何将博客部署到github在生成博客初始页面后，我们的博客还不算完成，因为我们只能看到的知识hexo提供的一个本地预览网页，别人是看不到的，那么如何才能让别人也可以访问的到我们的博客呢，那就需要我们把博客部署到网上了，这里，我选择的是github。 注册github账户和新建仓库首先，我们需要在github上有一个账户。 github官网 点击链接进入github官网注册。注册好之后点击sign in登录github。 点击new repository新建一个名为你的用户名.github.io的仓库。如我的用户名是gemuxiaoshe，那么我就需要新建一个gemuxiaoshe.github.io的仓库，这样你之后的网站地址就可以直接使用https://gemuxiaoshe.github.io/访问仓库了。 配置SSH key 为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。 我们在github命令行中输入以下命令来检测本机已存在的ssh密匙 1$ cd ~/. ssh #检查本机已存在的ssh密钥 如果提示：No such file or directory 说明你是第一次使用git。 1ssh-keygen -t rsa -C &quot;邮件地址&quot; 在github命令行中输入以上命令，然后连续三次回车。最后会在你的用户目录下生成一个id_rsa.pub文件,找到并打开它（可以直接使用记事本打开），复制里面的全部内容，然后打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：将刚复制的内容粘贴到key那里，title随便填，保存。 输入以下命令测试SSH key是否配置成功1$ ssh -T git@github.com # 注意邮箱地址不用改 如果提示Are you sure you want to continue connecting (yes/no)?，输入yes Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access. 看到这个信息说明SSH已配置成功！ 最后我们还需要配置：12$ git config --global user.name &quot;liuxianan&quot;// 你的github用户名，非昵称$ git config --global user.email &quot;xxx@qq.com&quot;// 填写你的github注册邮箱 部署代码到github上在配置还SSH key之后，我们上传代码就很容易了 这时候我们还不能直接使用hexo d 上传代码，因为我们还有_config.yml没有配置。打开_config.yml站点配置文件,目录为：D:\网页设计\hexo_config.yml找到deploy关键词进行如下配置： 1234deploy: type: git repository: git@github.com:liuxianan/liuxianan.github.io.git #你的用户名和你新建的仓库名 branch: master 配置成功后我们就可以开始上传我们的代码了首先我们用hexo g来生成一下文件 1$ hexo g 再输入以下命令上传代码到github上：1$ hexo d]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>博客创建</tag>
+        <tag>技术分享</tag>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[简记个人博客搭建历程]]></title>
     <url>%2F2018%2F04%2F20%2F%E7%AE%80%E8%AE%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B%2F</url>
     <content type="text"><![CDATA[搭建个人博客的起因 由于一直是计算机专业，所以在很久之前，便想搭建一个属于自己的个人博客。但苦于一直没有时间，也没有接触过这方面的东西等原因，一直没能实现。直到我们开了HTML课程，正好涉及到网页设计这方面，而课程的最终任务，就是设计一个独立网页。这时，我便恰好使用这个机会开始了个人博客搭建的探索。 基于wordPress的博客尝试 在博客搭建的初期，经过一系列的搜索和查找相关资料后，我首先选择的是wordPress提供的一个博客服务，其原因有三点： 它是一个评价较好的比较大众的博客平台 它也提供一个免费的博客服务和域名支持，可以不用任何花费便可被访问到 它的搭建过程可以是极简单的，同时也支持更自由的博客创建方式 但在使用不久我就放弃了使用wordpress的博客服务，主要出于其创建过于简单，只需要注册账户，选好主题就可以快速创建属于自己的博客，且其免费的博客服务中众多的功能都受到了限制，需要付费使用，无法涉及到更基础的网页设计知识。对我的帮助较小。 基于github+HTML的博客尝试 放弃使用wordpress的博客服务之后，已经对博客搭建这方面有了一定的了解了，并且在HTML的课程中也开始了网页设计的尝试。在这个过程中，通过查找资料，找到了一个比较好的博客搭建方式，那就是github代码寄存库。github是一个代码保存网站，并且它是免费给予用户500兆空间，在github中它会给我们自动生成一个静态页面，并且它是可以被访问的，也就是说我们只需要把我们自己编写好的网页代码上传到github上，我们便可以通过其自动生成的静态网页访问到我们的主页了。通过这种方式，我开始了第二次博客搭建的历程。github所具备的优点： 完全免费 开放性和极度的自由性，github是一个开放的代码交流和分享的平台。并且其代码完全可以由自己编写 具有一定深度，适合专业方面的人员使用，你可以在github上fork他人代码学习和研究，也可以自己编写代码，上传分享。适合学习。 在一段时间的摸索中，我成功的创建并上传了我的第二个博客，并可以被访问，代码基于HTML，是在学习HTML的过程中一点一点摸索着设计出来的。不过由于基础知识的严重缺乏，所编写的博客十分简陋，基本不具备可用性，和阅读性。我便暂时停止了第二个博客的编写，在之后的学习过程中，再来更新设计这个网页。目前暂时放下。 之后便开始尝试直接在其他的HTML博客主题上摸改博客，搭建自己的第三个博客，这个过程同样是漫长而枯燥的，不过最终的还是取得了不错的效果，并且在摸改过程中，对于HTML，css，都有了一定的了解，不再是一眼黑了。 但在不久后，我便也暂时放弃了第三个博客的更新和维护，其主要原因是已经达到了一个瓶颈，无法再短时间内做出功能更加强大的改变了，而博客功能又过于简单，无法满足一个完善博客的基本要求。我便暂时放弃了它的设计和维护，只做了一些简单的内容更新。 详细创建过程请看：基于hexo+github的博客尝试 由于数据结构课程，开始接触到了hexo博客创建的方式。hexo是一个快速，简洁且高效的博客框架，并且其功能十分齐全，支持markdown语言编辑博文。同时其也是一个开放性的平台，拥有着众多主题，你可以根据这个框架摸改他人博客模板，也可以自己依据hexo来快速编写自己的博客框架。同时它可以一键部署到各平台，网站。于是，我便开始了基于github上的hexo博客搭建过程。这个过程无疑是搭建博客以来最为繁琐的一次，因为这是一种全新的博客搭建方式。不过好在有hexo的使用文档可以帮助我们搭建博客。在经历一段时间的摸索和各种失败，和各种问题后。我也终于搭建好了这第四个个人博客，使用next主题，其主题文件配置，及站点文件配置着实花费了不少时间。但最终总算成功完成博客的搭建，还算是小有收获，在这个过程中最主要的应该就是了解了markdown语言的使用了。 详细创建过程请看： 本博客即是基于hexo+github搭建的第四个博客，同时本篇博文也是使用markdown语言书写。 最后附上各阶段博客地址 个人博客这是基于wordpress创建的第一个博客，基本没怎么使用 葛木小舍先生的小世界这是基于HTML的个人编写的静态个人网页，之后将会持续更新 葛木小舍先生的个人博客这是基于HTML主题的模改个人博客 葛木小舍先生的博客这是目前在使用的个人博客，基于hexo搭建。 以上博客代码均存放在github，使用的是github默认位置]]></content>
@@ -20,9 +33,9 @@
         <category>博文的创建和编写</category>
       </categories>
       <tags>
-        <tag>Markdown</tag>
         <tag>博客创建</tag>
         <tag>技术分享</tag>
+        <tag>Markdown</tag>
         <tag>菜鸟笔记</tag>
       </tags>
   </entry>

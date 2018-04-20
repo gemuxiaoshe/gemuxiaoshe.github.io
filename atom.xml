@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-20T06:56:45.839Z</updated>
+  <updated>2018-04-20T10:21:33.545Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>基于hexo+github搭建个人博客</title>
+    <link href="http://yoursite.com/2018/04/20/%E5%9F%BA%E4%BA%8Ehexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
+    <id>http://yoursite.com/2018/04/20/基于hexo-github搭建个人博客/</id>
+    <published>2018-04-20T07:11:25.000Z</published>
+    <updated>2018-04-20T10:21:33.545Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><blockquote><p>1.github pages服务生成的全是静态文件，访问速度快；<br>2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；<br>3.可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；<br>4.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；<br>5.博客内容可以轻松打包、转移、发布到其它平台；</p></blockquote></li></ul><hr><ul><li><h1 id="hexo、git配置和安装"><a href="#hexo、git配置和安装" class="headerlink" title="hexo、git配置和安装"></a>hexo、git配置和安装</h1><h2 id="什么是hexo？"><a href="#什么是hexo？" class="headerlink" title="什么是hexo？"></a>什么是hexo？</h2><blockquote><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p></blockquote></li></ul><hr><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装hexo只需要几分钟，但前提是你的确保你的电脑中已经安装了下列应用程序：</p><hr><h3 id="下载必须程序"><a href="#下载必须程序" class="headerlink" title="下载必须程序"></a>下载必须程序</h3><ul><li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a><blockquote><p>Node.js是一个Javascript运行环境(runtime)</p></blockquote></li></ul><ul><li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a><blockquote><p>Git是一个开源的分布式版本控制系统，用以有效、高速的处理从很小到非常大的项目版本管理。<br>从上面链接下载git for windows最好挂一个代理，否则下载速度会十分缓慢，你可以参考<strong><a href="https://github.com/waylau/git-for-win/blob/master/README.md" target="_blank" rel="noopener">这个页面</a></strong>,其中收录了存储于百度云的下载地址。</p></blockquote></li></ul><p>下载之后你可以在你想要创建博客的位置新建一个文件夹，进行node.js和git的安装，打开安装包，按顺序安装即可。<br>安装完成后可以打开cmd命令行检查是否安装完成：<br><img src="/images/安装测试.png" alt="cmd安装检查"></p><hr><h3 id="hexo安装"><a href="#hexo安装" class="headerlink" title="hexo安装"></a>hexo安装</h3><p>   <img src="/images/git命令行目录.png" alt="打开git命令行"></p><p>   打开git命令行输入以下代码安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p><p><img src="/images/安装成功.png" alt="安装成功"></p><hr><ul><li><h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1>安装好hexo后执行下列操作来生成所需要的文件</li></ul><hr><h2 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h2><blockquote><p>在你的电脑选取一个你想要存放这个网页的代码的文件夹，然后在里面新建一个hexo文件夹。</p></blockquote><p>在git命令行中输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd /d/网页设计/hexo</span><br><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p><p><img src="/images/hexo初始化.png" alt="初始化"><br><img src="/images/初始化2.png" alt="初始化2"></p><p>下载完成后，会在对应的hexo文件中自动生成对应文件。</p><h2 id="生成文件和启用预览服务"><a href="#生成文件和启用预览服务" class="headerlink" title="生成文件和启用预览服务"></a>生成文件和启用预览服务</h2><p>在git命令行中输入以下命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure></p><p><img src="/images/生成.png" alt="生成文件"><br>会在public文件中生成相关的HTML文件。</p><p><img src="/images/启动服务.png" alt="启用服务"><br>用来启用本地预览服务，启用后就可以通过<strong><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></strong>来预览博客内容。<br><img src="/images/初始博客.png" alt="初始博客主页"><br>如果一切顺利，访问以上预览链接应当出现这样的一个默认博客主页。<br>至这一步，一个基于hexo的blog就搭建完成了。</p><hr><h1 id="如何将博客部署到github"><a href="#如何将博客部署到github" class="headerlink" title="如何将博客部署到github"></a>如何将博客部署到github</h1><p><strong>在生成博客初始页面后，我们的博客还不算完成，因为我们只能看到的知识hexo提供的一个本地预览网页，别人是看不到的，那么如何才能让别人也可以访问的到我们的博客呢，那就需要我们把博客部署到网上了，这里，我选择的是github。</strong></p><hr><h2 id="注册github账户和新建仓库"><a href="#注册github账户和新建仓库" class="headerlink" title="注册github账户和新建仓库"></a>注册github账户和新建仓库</h2><p>首先，我们需要在github上有一个账户。</p><p><a href="https://github.com/" target="_blank" rel="noopener">github官网</a></p><p>点击链接进入github官网注册。<br><img src="/images/github注册.PNG" alt="github注册"><br>注册好之后点击sign in登录github。</p><p><img src="/images/新建仓库.PNG" alt="新建仓库"><br>点击new repository新建一个名为<code>你的用户名.github.io</code>的仓库。如我的用户名是gemuxiaoshe，那么我就需要新建一个<code>gemuxiaoshe.github.io</code>的仓库，这样你之后的网站地址就可以直接使用<a href="https://gemuxiaoshe.github.io/" target="_blank" rel="noopener">https://gemuxiaoshe.github.io/</a>访问仓库了。</p><hr><h2 id="配置SSH-key"><a href="#配置SSH-key" class="headerlink" title="配置SSH key"></a>配置SSH key</h2><blockquote><p>为什么要配置这个呢？因为你提交代码肯定要拥有你的github权限才可以，但是直接使用用户名和密码太不安全了，所以我们使用ssh key来解决本地和服务器的连接问题。</p></blockquote><hr><p>我们在github命令行中输入以下命令来检测本机已存在的ssh密匙</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/. ssh #检查本机已存在的ssh密钥</span><br></pre></td></tr></table></figure><blockquote><p>如果提示：No such file or directory 说明你是第一次使用git。</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;邮件地址&quot;</span><br></pre></td></tr></table></figure><p>在github命令行中输入以上命令，然后连续三次回车。最后会在你的用户目录下生成一个id_rsa.pub文件,<br>找到并打开它（可以直接使用记事本打开），复制里面的全部内容，然后打开你的github主页，进入个人设置 -&gt; SSH and GPG keys -&gt; New SSH key：<br><img src="http://image.liuxianan.com/201608/20160818_143914_495_9084.png" alt="ssh key"><br>将刚复制的内容粘贴到key那里，title随便填，保存。</p><p>输入以下命令测试SSH key是否配置成功<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh -T git@github.com # 注意邮箱地址不用改</span><br></pre></td></tr></table></figure></p><p>如果提示Are you sure you want to continue connecting (yes/no)?，输入yes</p><blockquote><p>Hi liuxianan! You’ve successfully authenticated, but GitHub does not provide shell access.</p></blockquote><p>看到这个信息说明SSH已配置成功！</p><p>最后我们还需要配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;liuxianan&quot;// 你的github用户名，非昵称</span><br><span class="line">$ git config --global user.email  &quot;xxx@qq.com&quot;// 填写你的github注册邮箱</span><br></pre></td></tr></table></figure></p><h2 id="部署代码到github上"><a href="#部署代码到github上" class="headerlink" title="部署代码到github上"></a>部署代码到github上</h2><p>在配置还SSH key之后，我们上传代码就很容易了</p><hr><p>这时候我们还不能直接使用hexo d 上传代码，因为我们还有_config.yml没有配置。<br>打开_config.yml站点配置文件,目录为：<code>D:\网页设计\hexo_config.yml</code><br>找到<code>deploy</code>关键词进行如下配置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:liuxianan/liuxianan.github.io.git #你的用户名和你新建的仓库名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure><p>配置成功后我们就可以开始上传我们的代码了<br>首先我们用<code>hexo g</code>来生成一下文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure><p>再输入以下命令上传代码到github上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;ul&gt;
+&lt;li&gt;&lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;1.github pages服务生成的全是静态文件，访问速度快；&lt;br&gt;2.免费方便，不用花一分
+      
+    
+    </summary>
+    
+      <category term="博客搭建" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="博客创建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
+    
+      <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>简记个人博客搭建历程</title>
     <link href="http://yoursite.com/2018/04/20/%E7%AE%80%E8%AE%B0%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E5%8E%86%E7%A8%8B/"/>
     <id>http://yoursite.com/2018/04/20/简记个人博客搭建历程/</id>
     <published>2018-04-20T05:28:56.000Z</published>
-    <updated>2018-04-20T06:56:45.839Z</updated>
+    <updated>2018-04-20T07:11:45.183Z</updated>
     
     <content type="html"><![CDATA[<h1 id="搭建个人博客的起因"><a href="#搭建个人博客的起因" class="headerlink" title="搭建个人博客的起因"></a>搭建个人博客的起因</h1><hr><p><strong>由于一直是计算机专业，所以在很久之前，便想搭建一个属于自己的个人博客。但苦于一直没有时间，也没有接触过这方面的东西等原因，一直没能实现。直到我们开了HTML课程，正好涉及到网页设计这方面，而课程的最终任务，就是设计一个独立网页。这时，我便恰好使用这个机会开始了个人博客搭建的探索。</strong></p><a id="more"></a><h1 id="基于wordPress的博客尝试"><a href="#基于wordPress的博客尝试" class="headerlink" title="基于wordPress的博客尝试"></a>基于wordPress的博客尝试</h1><hr><p>在博客搭建的初期，经过一系列的搜索和查找相关资料后，我首先选择的是wordPress提供的一个博客服务，其原因有三点：</p><ul><li>它是一个评价较好的比较大众的博客平台</li><li>它也提供一个免费的博客服务和域名支持，可以不用任何花费便可被访问到</li><li>它的搭建过程可以是极简单的，同时也支持更自由的博客创建方式</li></ul><p>但在使用不久我就放弃了使用wordpress的博客服务，主要出于其创建过于简单，只需要注册账户，选好主题就可以快速创建属于自己的博客，且其免费的博客服务中众多的功能都受到了限制，需要付费使用，无法涉及到更基础的网页设计知识。对我的帮助较小。</p><h1 id="基于github-HTML的博客尝试"><a href="#基于github-HTML的博客尝试" class="headerlink" title="基于github+HTML的博客尝试"></a>基于github+HTML的博客尝试</h1><hr><p> 放弃使用wordpress的博客服务之后，已经对博客搭建这方面有了一定的了解了，并且在HTML的课程中也开始了网页设计的尝试。在这个过程中，通过查找资料，找到了一个比较好的博客搭建方式，那就是github代码寄存库。github是一个代码保存网站，并且它是免费给予用户500兆空间，在github中它会给我们自动生成一个静态页面，并且它是可以被访问的，也就是说我们只需要把我们自己编写好的网页代码上传到github上，我们便可以通过其自动生成的静态网页访问到我们的主页了。通过这种方式，我开始了第二次博客搭建的历程。github所具备的优点：</p><ul><li>完全免费</li><li>开放性和极度的自由性，github是一个开放的代码交流和分享的平台。并且其代码完全可以由自己编写</li><li>具有一定深度，适合专业方面的人员使用，你可以在github上fork他人代码学习和研究，也可以自己编写代码，上传分享。适合学习。</li></ul><p>在一段时间的摸索中，我成功的创建并上传了我的第二个博客，并可以被访问，代码基于HTML，是在学习HTML的过程中一点一点摸索着设计出来的。不过由于基础知识的严重缺乏，所编写的博客十分简陋，基本不具备可用性，和阅读性。我便暂时停止了第二个博客的编写，在之后的学习过程中，再来更新设计这个网页。目前暂时放下。</p><p>之后便开始尝试直接在其他的HTML博客主题上摸改博客，搭建自己的第三个博客，这个过程同样是漫长而枯燥的，不过最终的还是取得了不错的效果，并且在摸改过程中，对于HTML，css，都有了一定的了解，不再是一眼黑了。</p><p>但在不久后，我便也暂时放弃了第三个博客的更新和维护，其主要原因是已经达到了一个瓶颈，无法再短时间内做出功能更加强大的改变了，而博客功能又过于简单，无法满足一个完善博客的基本要求。我便暂时放弃了它的设计和维护，只做了一些简单的内容更新。</p><ul><li><h2 id="详细创建过程请看："><a href="#详细创建过程请看：" class="headerlink" title="详细创建过程请看："></a>详细创建过程请看：</h2><h1 id="基于hexo-github的博客尝试"><a href="#基于hexo-github的博客尝试" class="headerlink" title="基于hexo+github的博客尝试"></a>基于hexo+github的博客尝试</h1></li></ul><hr><p> 由于数据结构课程，开始接触到了hexo博客创建的方式。hexo是一个快速，简洁且高效的博客框架，并且其功能十分齐全，支持markdown语言编辑博文。同时其也是一个开放性的平台，拥有着众多主题，你可以根据这个框架摸改他人博客模板，也可以自己依据hexo来快速编写自己的博客框架。同时它可以一键部署到各平台，网站。于是，我便开始了基于github上的hexo博客搭建过程。这个过程无疑是搭建博客以来最为繁琐的一次，因为这是一种全新的博客搭建方式。不过好在有hexo的使用文档可以帮助我们搭建博客。在经历一段时间的摸索和各种失败，和各种问题后。我也终于搭建好了这第四个个人博客，使用next主题，其主题文件配置，及站点文件配置着实花费了不少时间。但最终总算成功完成博客的搭建，还算是小有收获，在这个过程中最主要的应该就是了解了markdown语言的使用了。</p><ul><li><h2 id="详细创建过程请看：-1"><a href="#详细创建过程请看：-1" class="headerlink" title="详细创建过程请看："></a>详细创建过程请看：</h2></li></ul><hr><blockquote><p><strong>本博客即是基于hexo+github搭建的第四个博客，同时本篇博文也是使用markdown语言书写。</strong></p></blockquote><hr><h1 id="最后附上各阶段博客地址"><a href="#最后附上各阶段博客地址" class="headerlink" title="最后附上各阶段博客地址"></a>最后附上各阶段博客地址</h1><ul><li><p><a href="https://gemumiaoshe.wordpress.com/" target="_blank" rel="noopener">个人博客</a><br>这是基于wordpress创建的第一个博客，基本没怎么使用</p></li><li><p><a href="https://gemuxiaoshe.github.io/Sworld/" target="_blank" rel="noopener">葛木小舍先生的小世界</a><br>这是基于HTML的个人编写的静态个人网页，之后将会持续更新</p></li><li><p><a href="https://gemuxiaoshe.github.io/qw/" target="_blank" rel="noopener">葛木小舍先生的个人博客</a><br>这是基于HTML主题的模改个人博客</p></li><li><p><a href="https://gemuxiaoshe.github.io/" target="_blank" rel="noopener">葛木小舍先生的博客</a><br>这是目前在使用的个人博客，基于hexo搭建。</p><p><strong>以上博客代码均存放在github，使用的是github默认位置</strong> </p></li></ul><hr>]]></content>
     
@@ -64,11 +95,11 @@
       <category term="博文的创建和编写" scheme="http://yoursite.com/categories/%E5%8D%9A%E6%96%87%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E7%BC%96%E5%86%99/"/>
     
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
-    
       <category term="博客创建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
     
       <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
     
       <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
     
