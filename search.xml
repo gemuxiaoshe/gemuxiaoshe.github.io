@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[这是一篇测试博客]]></title>
+    <url>%2F2018%2F04%2F12%2F%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3%2F</url>
+    <content type="text"><![CDATA[这是葛木小舍先生的第一篇博文 I love three things:the sun ,the moon and you.the sun is for the day ,the moon is for the nightand you forever.我爱三样东西，太阳，月亮和你。太阳留给白天，月亮留给夜晚，而你，是永远。 关于新建博文的两种方法： 通过git命令窗口新建博文 这一篇博文是直接由git命令窗口创建1hexo new &apos;my-first-blog&apos; 通过命令行创建.md格式的Markdown文件，之后找到其所在的位置。打开它（Markdown文档是纯文本文档，可以用任何文本编辑器打开编辑）进行编辑。 直接新建.md格式文档放到博客目录下新建博文我们可以直接找到博文存放的位置，直接在里面新建.md文件创建 这里需要注意的是：在文件的开始，一定的需要加上title等必要元素，这样它才能在博客中显示出来。1234567---title: 这是一篇测试博客 #文章页面上的显示名称，一般是中文date: 2018-04-11 17:10:10 #文章生成时间，一般不改，当然也可以任意修改categories: 默认分类 #分类tags: #文章标签，可空，多标签请用格式，注意:后面有个空格description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面--- 参考： 写作|hexo这是一个关于hexo的使用的官方网站。 小茗同学的博客园这是我参考的一个基于hexo+github的一个比较详细的博客搭建教程]]></content>
+      <categories>
+        <category>博文的创建和编写</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+        <tag>博客创建</tag>
+        <tag>技术分享</tag>
+        <tag>菜鸟笔记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[markdown标记语言中基本标签的使用]]></title>
+    <url>%2F2018%2F04%2F11%2Fmarkdown%E6%A0%87%E8%AE%B0%E8%AF%AD%E8%A8%80%E7%9A%84%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[Markdown 的目标是实现「易读易写」。可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，&gt;并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML &gt;格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最&gt;大灵感来源其实是纯文本电子邮件的格式。总之， Markdown 的语法全由一些符号所组成，这些符号经过精挑细选，其作用一目了然。比如：在文&gt;字两旁加上星号，看起来就像强调。Markdown 的列表看起来，嗯，就是列表。Markdown 的区块引&gt;用看起来就真的像是引用一段文字，就像你曾在电子邮件中见过的那样。 markdown语言的基本标签所有的Markdown语言标签在使用中都应当是需要在后面带一个空格再加内容来使用的。 标题标题使用# 符号，其数目以此对应h1-h6级标题。 这是一个一级标题1# 一级标题 这是一个二级标题这是一个三级标题这是一个四级标题这是一个五级标题这是一个六级标题 段落段落在Markdown里是不需要任何特殊标记的，可以直接进行输入。 段落1 段落2 引用最简单的引用标签直接用&gt; 符号就好了. 普通引用方式 引用内容 1&gt; 这是葛木小舍先生的第一篇博客 Bootstrap Callout 使用方式 1&#123;% note class_name %&#125; Content (md partial supported) &#123;% endnote %&#125; 其中, class_name 可以是以下列表中的一个值： default Content of default bs-callout * primary Content of primary bs-callout success Content of success bs-callout * info Content of info bs-callout warning Content of waning bs-callout * danger Content of danger bs-callout 列表列表可以使用- + * 符号作为列表标记。并且列表是可以嵌套使用的。 这是一个无序列表 这是一个无序列表12- 这是一个无序列表* 这是一个无序列表 这是一个父类列表 这是一个子类列表 链接可以是网站，也可以是一张图片的链接。 这是一个个人博客的链接 葛木小舍先生的小世界 123[葛木小舍先生的小世界](https://gemumiaoshe.wordpress.com/) #在这里是用[链接名](链接地址)的形式构成链接 这是葛木小舍先生的个人博客 https://gemumiaosheWordPress.com 123这是葛木小舍先生的个人博客&lt;https://gemumiaosheWordPress.com&gt;#这里是直接用尖括号&lt;地址&gt;来直接构成链接。 这里是插入图片链接的两种方式： 123![这是一张图片](https://upload-images.jianshu.io/upload_images/95646-5bfd0cecf587c766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600)#和直接插入网页的方式是相似的，这里只需要在[]前加一个感叹号就可以了。使用![图片的备用显示名](图片地址)的形式就可以了 12&lt;img src=&quot;https://upload-images.jianshu.io/upload_images/95646-5bfd0cecf587c766.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/600&quot; width=200px hight=200px alt=&quot;简书&quot; left &gt;#这里是直接使用html中插入图片的&lt;img src=&quot;图片地址&quot;&gt;的形式插入图片的。 在这里，就插入图片的地址有两点需要注意，图片地址可以是它的网页存储地址，如果是本地的相对地址，则需要注意。你可以选择把你需要用到的图片上传到网页上保存，再来进行引用。在这里使用的图片都是使用的第一种方式，我的图片是存在github上的。 代码段在markdown中引用一段代码是很容易的，只需要用两行半角单引号将代码包裹住就可以了。其位置在tab键上方。 123456789101112&lt;!--代码段--&gt;&lt;html&gt;&lt;head&gt;&lt;body&gt;&lt;h1&gt;这是一个一级标题&lt;/h1&gt;&lt;p&gt;这是一个段落&lt;/p&gt;&lt;hr&gt;&lt;a helf=&quot;链接地址&quot;&gt;&lt;img src=&quot;图片地址&quot;&gt;&lt;/body&gt;&lt;/head&gt;&lt;/html&gt; 简单的字体样式字体的粗细倾斜都只需要用*标记来表示。 这是一段倾斜字体 这是一段加粗字体 这是一段倾斜加粗字体 12345*这是一段倾斜字体***这是一段加粗字体*****这是一段倾斜加粗字体*** 表格表格是使用|来表示的，几行几列都使用|来分割开来就好。 表格 表头一 表头二 表头三 左对齐 居中对齐 右对齐 代码 123表头一|表头二|表头三|:---|:---:|---:|左对齐|居中对齐|右对齐 markdown相关编译器由于我比较懒，所以并没有专门下载相关的编译器。我本身是使用Dw编写的。markdown是纯文本文档，所以它是一门可以用任何文档编辑器打开编辑的语言。而编辑器只是给我们提供一个辅助的作用，可以给我们提供方便。 支持markdown编辑和预览的工具：有道云云笔记简书 专业的markdown编译工具： MarkdownPad 用户可以通过键盘快捷键和工具栏按钮来使用或者移除 Markdown 格式。MarkdownPad左右栏的分割方式令用户可以实时看到 HTML 格式的 Markdown 文档。 Mou Mou 是 Mac下杰出的 Markdown 编辑器，提供语法高亮、在线预览、同步滚动、全屏模式，支持自定保存、自动匹配，允许自定义主题，支持 CSS，HTML 和 PDF 导出等。 MarkPad MarkPad 是款开源的 Markdown 编辑器，与 Window 8 风格和谐友好的界面，可以直接在你的博客或者 GitHub 中打开、保存文档，直接将图片粘贴到 Markdown 文档中。 MarkdownEditor MarkdownEditor 是一款基于浏览器的 Markdown 文本编辑器，功能非常简单实用。 保存 最后将编辑好的markdown文档保存为.md格式就可以用对应工具编辑和查看效果了。 markdown标记语言因其简洁性，被常用于博文等文档的编写。本博客是基于hexo搭建的，其中博客也都是基于markdown语言编写的。 参考 献给写作者的 Markdown 新手指南这是我参考过的简书上的一个markdown新手教程 Markdown 语法说明这是我参考的一个markdown的简体中文版语法说明文档]]></content>
+      <categories>
+        <category>博文的创建和编写</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+</search>
