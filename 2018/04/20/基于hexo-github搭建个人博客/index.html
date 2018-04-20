@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://yoursite.com/images/新建仓库.PNG">
 <meta property="og:image" content="http://image.liuxianan.com/201608/20160818_143914_495_9084.png">
 <meta property="og:image" content="http://yoursite.com/images/上传.PNG">
-<meta property="og:updated_time" content="2018-04-20T11:17:30.985Z">
+<meta property="og:updated_time" content="2018-04-20T13:11:02.389Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于hexo+github搭建个人博客">
 <meta name="twitter:description" content="前言 1.github pages服务生成的全是静态文件，访问速度快；2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；3.可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；4.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；5.博客内容可以轻松打包、转移、发布到其它平台；">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,027
+                  2,100
                 </span>
               
 
@@ -416,7 +416,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  7
+                  8
                 </span>
               
             </div>
@@ -534,6 +534,11 @@
 <li><a href="https://www.jianshu.com/p/f054333ac9e6" target="_blank" rel="noopener">hexo的next主题个性化教程:打造炫酷网站</a><br>一个简书上的Next主题的个性化配置教程，其中还包括一些Next使用文档所没有的进阶配置，比较详细的介绍了主题的各种个性化配置。。</li>
 </ul>
 <hr>
+<h2 id="关于分享功能实现的补充"><a href="#关于分享功能实现的补充" class="headerlink" title="关于分享功能实现的补充"></a>关于分享功能实现的补充</h2><p>由于我使用的百度分享和jiathis分享均出现了问题，并且并没有找到解决的办法，于是使用了另外一个第三方分享服务sharesdk。</p>
+<ul>
+<li>具体实现方法请点击下面链接</li>
+</ul>
+<hr>
 <h1 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h1><hr>
 <ul>
 <li><p><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo使用文档</a><br>hexo的官方使用文档，十分详细的总结归纳了hexo的各种使用方法。</p>
@@ -636,31 +641,27 @@
 
     <div class="post-spread">
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-<span class="jiathis_txt">分享到：</span>
-<a class="jiathis_button_fav">收藏夹</a>
-<a class="jiathis_button_copy">复制网址</a>
-<a class="jiathis_button_email">邮件</a>
-<a class="jiathis_button_weixin">微信</a>
-<a class="jiathis_button_qzone">QQ空间</a>
-<a class="jiathis_button_tqq">腾讯微博</a>
-<a class="jiathis_button_douban">豆瓣</a>
-<a class="jiathis_button_share">一键分享</a>
-
-<a href="http://www.jiathis.com/share?uid=2140465" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank">更多</a>
-<a class="jiathis_counter_style"></a>
+        <!--MOB SHARE BEGIN-->
+<div class="-mob-share-ui-button -mob-share-open">分享</div>
+<div class="-mob-share-ui" style="display: none">
+    <ul class="-mob-share-list">
+        <li class="-mob-share-weibo"><p>新浪微博</p></li>
+        <li class="-mob-share-tencentweibo"><p>腾讯微博</p></li>
+        <li class="-mob-share-qzone"><p>QQ空间</p></li>
+        <li class="-mob-share-qq"><p>QQ好友</p></li>
+        <li class="-mob-share-renren"><p>人人网</p></li>
+        <li class="-mob-share-kaixin"><p>开心网</p></li>
+        <li class="-mob-share-douban"><p>豆瓣</p></li>
+        <li class="-mob-share-facebook"><p>Facebook</p></li>
+        <li class="-mob-share-twitter"><p>Twitter</p></li>
+    </ul>
+    <div class="-mob-share-close">取消</div>
 </div>
-<script type="text/javascript" >
-var jiathis_config={
-  data_track_clickback:true,
-  summary:"",
-  shortUrl:false,
-  hideMore:false
-}
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=" charset="utf-8"></script>
-<!-- JiaThis Button END -->
+<div class="-mob-share-ui-bg"></div>
+<script id="-mob-share" src="http://f1.webshare.mob.com/code/mob-share.js?appkey=255a95a4b874a"></script>
+<!--MOB SHARE END-->            
+
+		
       
     </div>
   </div>
@@ -851,7 +852,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo、git配置和安装"><span class="nav-number">2.</span> <span class="nav-text">hexo、git配置和安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo？"><span class="nav-number">2.1.</span> <span class="nav-text">什么是hexo？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载必须程序"><span class="nav-number">2.2.1.</span> <span class="nav-text">下载必须程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo安装"><span class="nav-number">2.2.2.</span> <span class="nav-text">hexo安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建站"><span class="nav-number">3.</span> <span class="nav-text">建站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成文件和启用预览服务"><span class="nav-number">3.2.</span> <span class="nav-text">生成文件和启用预览服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何将博客部署到github"><span class="nav-number">4.</span> <span class="nav-text">如何将博客部署到github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册github账户和新建仓库"><span class="nav-number">4.1.</span> <span class="nav-text">注册github账户和新建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置SSH-key"><span class="nav-number">4.2.</span> <span class="nav-text">配置SSH key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署代码到github上"><span class="nav-number">4.3.</span> <span class="nav-text">部署代码到github上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#博客的进阶学习主题的更改和优化以及博客的创建和编写"><span class="nav-number">5.</span> <span class="nav-text">博客的进阶学习主题的更改和优化以及博客的创建和编写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于博客的创建和编写可以参考我的另两篇博文"><span class="nav-number">5.1.</span> <span class="nav-text">关于博客的创建和编写可以参考我的另两篇博文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于博客主题的修改和优化可以参考下面的网站，在这里就不进行详细过程的介绍了"><span class="nav-number">5.2.</span> <span class="nav-text">关于博客主题的修改和优化可以参考下面的网站，在这里就不进行详细过程的介绍了</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hexo、git配置和安装"><span class="nav-number">2.</span> <span class="nav-text">hexo、git配置和安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是hexo？"><span class="nav-number">2.1.</span> <span class="nav-text">什么是hexo？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">2.2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载必须程序"><span class="nav-number">2.2.1.</span> <span class="nav-text">下载必须程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo安装"><span class="nav-number">2.2.2.</span> <span class="nav-text">hexo安装</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#建站"><span class="nav-number">3.</span> <span class="nav-text">建站</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化"><span class="nav-number">3.1.</span> <span class="nav-text">初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#生成文件和启用预览服务"><span class="nav-number">3.2.</span> <span class="nav-text">生成文件和启用预览服务</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何将博客部署到github"><span class="nav-number">4.</span> <span class="nav-text">如何将博客部署到github</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#注册github账户和新建仓库"><span class="nav-number">4.1.</span> <span class="nav-text">注册github账户和新建仓库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#配置SSH-key"><span class="nav-number">4.2.</span> <span class="nav-text">配置SSH key</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#部署代码到github上"><span class="nav-number">4.3.</span> <span class="nav-text">部署代码到github上</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#博客的进阶学习主题的更改和优化以及博客的创建和编写"><span class="nav-number">5.</span> <span class="nav-text">博客的进阶学习主题的更改和优化以及博客的创建和编写</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#关于博客的创建和编写可以参考我的另两篇博文"><span class="nav-number">5.1.</span> <span class="nav-text">关于博客的创建和编写可以参考我的另两篇博文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于博客主题的修改和优化可以参考下面的网站，在这里就不进行详细过程的介绍了"><span class="nav-number">5.2.</span> <span class="nav-text">关于博客主题的修改和优化可以参考下面的网站，在这里就不进行详细过程的介绍了</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于分享功能实现的补充"><span class="nav-number">5.3.</span> <span class="nav-text">关于分享功能实现的补充</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考"><span class="nav-number">6.</span> <span class="nav-text">参考</span></a></li></ol></div>
             
 
           </div>
@@ -905,7 +906,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共5.6k字</span>
+  <span class="post-count">博客全站共5.7k字</span>
 </div>
 
         
