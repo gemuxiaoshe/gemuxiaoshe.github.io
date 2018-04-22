@@ -30,9 +30,9 @@
       <category term="数据结构" scheme="http://yoursite.com/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
     
-      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
     
       <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
@@ -43,7 +43,7 @@
     <link href="http://yoursite.com/2018/04/21/%E6%89%80%E7%A2%B0%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     <id>http://yoursite.com/2018/04/21/所碰到的问题及解决方案/</id>
     <published>2018-04-21T09:16:20.000Z</published>
-    <updated>2018-04-22T04:42:45.544Z</updated>
+    <updated>2018-04-22T04:56:49.663Z</updated>
     
     <content type="html"><![CDATA[<ul><li><h1 id="关于在博客中添加第三方分享服务的问题"><a href="#关于在博客中添加第三方分享服务的问题" class="headerlink" title="关于在博客中添加第三方分享服务的问题"></a>关于在博客中添加第三方分享服务的问题</h1></li></ul><hr><h2 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h2><h2 id="关于博客第三方分享服务的实现过程中所出现的问题，在这里详细描述如下"><a href="#关于博客第三方分享服务的实现过程中所出现的问题，在这里详细描述如下" class="headerlink" title=" 关于博客第三方分享服务的实现过程中所出现的问题，在这里详细描述如下"></a> 关于博客第三方分享服务的实现过程中所出现的问题，在这里详细描述如下</h2><ul><li><h3 id="在开启jia-this分享服务的过程中所出现的问题："><a href="#在开启jia-this分享服务的过程中所出现的问题：" class="headerlink" title="在开启jia this分享服务的过程中所出现的问题："></a>在开启jia this分享服务的过程中所出现的问题：</h3><p>能够成功开启，并且能够在本地服务中正常使用，不过在代码上传到github上之后虽然能够显示出分享片段，不过出现没有按钮，无法成功分享当前页面的问题，点击更多，能够成功分享，但无法分享当前博客主页，只能分享jiathis分享主页。</p></li><li><h3 id="在开启百度分享服务过程中所出现的问题："><a href="#在开启百度分享服务过程中所出现的问题：" class="headerlink" title="在开启百度分享服务过程中所出现的问题："></a>在开启百度分享服务过程中所出现的问题：</h3><p>完全无法打开分享功能，博客页面无法显示。尝试过多种解决方法，均无法解决问题。</p></li><li><h3 id="添加第三方sharesdk分享服务中所出现的问题："><a href="#添加第三方sharesdk分享服务中所出现的问题：" class="headerlink" title="添加第三方sharesdk分享服务中所出现的问题："></a>添加第三方sharesdk分享服务中所出现的问题：</h3><p>代码，服务开启都能够成功实现，并且能够在本地预览中实现分享功能，但显示分享失败，代码上传到github之后，出现了同jiathis分享服务相似的问题，分享按钮无效，第三方分享页面无法打开。</p></li></ul><hr><h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>  针对上面问题所尝试的几种方案均无法成功解决问题，在网上也没有查找到相关的问题描述和解决方案<br>  个人观察推测可能是hexo主题配置或者代码上传到github上后出现错误。</p><p>  <strong>该问题尚未解决</strong></p><hr><p>  更新时间：<br>  2018/4/20日</p><hr><ul><li><h1 id="如何控制博文在主页中显示的字段长度"><a href="#如何控制博文在主页中显示的字段长度" class="headerlink" title="如何控制博文在主页中显示的字段长度"></a>如何控制博文在主页中显示的字段长度</h1></li></ul><hr><h2 id="问题描述-1"><a href="#问题描述-1" class="headerlink" title="问题描述"></a>问题描述</h2><p>  无法控制博文在博客主页推送的字段长短，使得每一篇博文在主页中都是全部显示，对于长篇的博文十分不便于浏览者观看。</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><pre><code>1. 通过&lt;!--more--&gt;标签实现主页显示2. 通过在头部文件中添加描述标签，具体代码如下：</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 这是一篇测试博客  #标题</span><br><span class="line">date: 2018-04-12 00:54:31</span><br><span class="line">categories: 博文的创建和编写  #分类</span><br><span class="line">tags:   # 标签</span><br><span class="line">- Markdown</span><br><span class="line">- 博客创建</span><br><span class="line">- 技术分享</span><br><span class="line">- 菜鸟笔记 </span><br><span class="line">#description: 第一篇博文，关于Markdown格式的博文的两种创建方式。  #描述</span><br><span class="line">---</span><br></pre></td></tr></table></figure><p> <strong>问题已解决</strong></p><hr><p>更新时间：<br>2018/4/22日</p><hr><ul><li><h1 id="如何在博文中用灰色字块标记某段博文"><a href="#如何在博文中用灰色字块标记某段博文" class="headerlink" title="如何在博文中用灰色字块标记某段博文"></a>如何在博文中用灰色字块标记某段博文</h1><h2 id="问题描述-2"><a href="#问题描述-2" class="headerlink" title="问题描述"></a>问题描述</h2><p>有时候我们需要标记博文中某一字段的博文，而markdown语言中却没有支持某字段的标记标签。而引用，代码注释标签，都无法在文本中间插入对某字段进行标记使用。</p><hr><h2 id="解决方案-1"><a href="#解决方案-1" class="headerlink" title="解决方案"></a>解决方案</h2><p>思路：由于markdown语言是支持部分HTML语言标签的，所以我们可以尝试使用HTML标签来进行某一字段的标记。</p><blockquote><p>code标签的定义: &lt; code &gt;标签， 用于表示计算机源代码或者其他机器可以阅读的文本内容。软件代码的编写 者习惯了编写代码时的代码格式，那么这个&lt; code &gt;标签就是为软件代码编写者设计的， code标签内的文本将用等宽、类似电传打字机样式的字体（Courier）显示出来。</p></blockquote><p> 其使用后的效果是这样的：<code>这是一段使用&lt; code &gt;标签标记的字段 </code></p></li></ul><p><strong>问题已解决</strong></p><hr><p>更新时间：<br>2018/4/22日</p><hr>]]></content>
     
@@ -56,9 +56,9 @@
       <category term="问题记录" scheme="http://yoursite.com/categories/%E9%97%AE%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
     
     
-      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
-    
       <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
+    
+      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
@@ -85,9 +85,9 @@
       <category term="博客搭建" scheme="http://yoursite.com/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
-    
       <category term="博客创建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
+    
+      <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
       <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
@@ -119,11 +119,11 @@
   </entry>
   
   <entry>
-    <title>这是一篇测试博客</title>
+    <title>这是一篇测试博文</title>
     <link href="http://yoursite.com/2018/04/12/%E6%B5%8B%E8%AF%95%E6%96%87%E6%A1%A3/"/>
     <id>http://yoursite.com/2018/04/12/测试文档/</id>
     <published>2018-04-11T16:54:31.000Z</published>
-    <updated>2018-04-22T04:36:54.546Z</updated>
+    <updated>2018-04-22T13:14:07.773Z</updated>
     
     <content type="html"><![CDATA[<hr><blockquote><p>这是葛木小舍先生的第一篇博文</p></blockquote><div class="note info"><p>I love three things:the sun ,the moon and you.<br>the sun is for the day ,the moon is for the night<br>and you forever.<br>我爱三样东西，太阳，月亮和你。<br>太阳留给白天，<br>月亮留给夜晚，<br>而你，是永远。</p></div><hr><a id="more"></a><h1 id="关于新建博文的两种方法："><a href="#关于新建博文的两种方法：" class="headerlink" title="关于新建博文的两种方法："></a>关于新建博文的两种方法：</h1><ul><li><h2 id="通过git命令窗口新建博文"><a href="#通过git命令窗口新建博文" class="headerlink" title="通过git命令窗口新建博文"></a>通过git命令窗口新建博文</h2></li></ul><p>这一篇博文是直接由git命令窗口创建<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &apos;my-first-blog&apos;</span><br></pre></td></tr></table></figure></p><p><img src="https://raw.githubusercontent.com/gemuxiaoshe/aw/master/2018-4-11.PNG" alt="c"></p><p>通过命令行创建.md格式的Markdown文件，之后找到其所在的位置。打开它（Markdown文档是纯文本文档，可以用任何文本编辑器打开编辑）进行编辑。</p><hr><ul><li><h2 id="直接新建-md格式文档放到博客目录下新建博文"><a href="#直接新建-md格式文档放到博客目录下新建博文" class="headerlink" title="直接新建.md格式文档放到博客目录下新建博文"></a>直接新建.md格式文档放到博客目录下新建博文</h2>我们可以直接找到博文存放的位置，直接在里面新建.md文件创建</li></ul><p><img src="https://raw.githubusercontent.com/gemuxiaoshe/aw/master/2018-4-11-2.PNG" alt="博文目录"></p><ul><li><strong>这里需要注意的是：</strong><br>在文件的开始，一定的需要加上title等必要元素，这样它才能在博客中显示出来。<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 这是一篇测试博客 #文章页面上的显示名称，一般是中文</span><br><span class="line">date: 2018-04-11 17:10:10 #文章生成时间，一般不改，当然也可以任意修改</span><br><span class="line">categories: 默认分类 #分类</span><br><span class="line">tags: #文章标签，可空，多标签请用格式，注意:后面有个空格</span><br><span class="line">description: 附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li></ul><h2 id="参考："><a href="#参考：" class="headerlink" title="参考："></a>参考：</h2><ul><li><a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">写作|hexo</a><br>这是一个关于hexo的使用的官方网站。</li><li><a href="http://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">小茗同学的博客园</a><br>这是我参考的一个基于hexo+github的一个比较详细的博客搭建教程</li></ul><hr>]]></content>
     
@@ -141,13 +141,13 @@
       <category term="博文的创建和编写" scheme="http://yoursite.com/categories/%E5%8D%9A%E6%96%87%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E7%BC%96%E5%86%99/"/>
     
     
-      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
-    
-      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
+      <category term="博客创建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
     
       <category term="技术分享" scheme="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/"/>
     
-      <category term="博客创建" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2%E5%88%9B%E5%BB%BA/"/>
+      <category term="Markdown" scheme="http://yoursite.com/tags/Markdown/"/>
+    
+      <category term="菜鸟笔记" scheme="http://yoursite.com/tags/%E8%8F%9C%E9%B8%9F%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
