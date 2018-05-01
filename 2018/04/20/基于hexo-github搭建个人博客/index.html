@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="博客创建,技术分享,hexo," />
+  <meta name="keywords" content="技术分享,博客创建,hexo," />
 
 
 
@@ -82,7 +82,7 @@
 
 
 <meta name="description" content="前言 1.github pages服务生成的全是静态文件，访问速度快；2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；3.可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；4.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；5.博客内容可以轻松打包、转移、发布到其它平台；">
-<meta name="keywords" content="博客创建,技术分享,hexo">
+<meta name="keywords" content="技术分享,博客创建,hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于hexo+github搭建个人博客">
 <meta property="og:url" content="http://yoursite.com/2018/04/20/基于hexo-github搭建个人博客/index.html">
@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://yoursite.com/images/新建仓库.PNG">
 <meta property="og:image" content="http://image.liuxianan.com/201608/20160818_143914_495_9084.png">
 <meta property="og:image" content="http://yoursite.com/images/上传.PNG">
-<meta property="og:updated_time" content="2018-04-21T09:10:55.338Z">
+<meta property="og:updated_time" content="2018-04-23T07:53:28.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于hexo+github搭建个人博客">
 <meta name="twitter:description" content="前言 1.github pages服务生成的全是静态文件，访问速度快；2.免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；3.可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；4.数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；5.博客内容可以轻松打包、转移、发布到其它平台；">
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2,204
+                  2,286
                 </span>
               
 
@@ -516,7 +516,10 @@
 <hr>
 <p>这时候我们还不能直接使用hexo d 上传代码，因为我们还有_config.yml没有配置。<br>打开_config.yml站点配置文件,目录为：<code>D:\网页设计\hexo_config.yml</code><br>找到<code>deploy</code>关键词进行如下配置：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:liuxianan/liuxianan.github.io.git #你的用户名和你新建的仓库名</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>配置成功后我们就可以开始上传我们的代码了<br>首先我们用<code>hexo g</code>来生成一下文件</p>
+<p>配置成功之后，我们可以尝试使用hexo d 来上传我们的代码，但这个时候应当是无法上传成功的。<br>它会出现以下内容：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deployer not found: git</span><br></pre></td></tr></table></figure></p>
+<p>表示它没有发现git</p>
+<p>这是因为我们还需要安装一个插件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>安装成功后我们就可以开始上传我们的代码了<br>首先我们用<code>hexo g</code>来生成一下文件</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure>
 <p>再输入以下命令上传代码到github上：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></p>
 <p><img src="/images/上传.PNG" alt="上传"><br>上传成功！之后你可以登录你的github主页查看代码是否上传成功。<br>并且可以直接使用你之前设置好的仓库地址<a href="https://gemuxiaoshe.github.io/" target="_blank" rel="noopener">https://gemuxiaoshe.github.io/</a>登录到你的博客主页了。</p>
@@ -601,9 +604,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/博客创建/" rel="tag"># 博客创建</a>
-          
             <a href="/tags/技术分享/" rel="tag"># 技术分享</a>
+          
+            <a href="/tags/博客创建/" rel="tag"># 博客创建</a>
           
             <a href="/tags/hexo/" rel="tag"># hexo</a>
           
@@ -892,7 +895,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共6.7k字</span>
+  <span class="post-count">博客全站共10.3k字</span>
 </div>
 
         
