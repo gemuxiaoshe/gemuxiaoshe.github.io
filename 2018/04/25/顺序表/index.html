@@ -90,7 +90,7 @@
 <meta property="og:description" content="记录了数据结构线性表中顺序表的储存结构及其实现。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://img-blog.csdn.net/20161030092804983">
-<meta property="og:updated_time" content="2018-04-29T07:37:41.379Z">
+<meta property="og:updated_time" content="2018-05-01T13:41:07.258Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java数据结构线性表——顺序表的设计思想及实现">
 <meta name="twitter:description" content="记录了数据结构线性表中顺序表的储存结构及其实现。">
@@ -389,7 +389,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3,335
+                  3,356
                 </span>
               
 
@@ -491,7 +491,12 @@
 </ul>
 <p>  这是一个主函数类，用来测试顺序表的各种操作的实现。</p>
 <hr>
-<p>  更新时间：<br>  2018.4.29</p>
+<ul>
+<li><h2 id="参考"><a href="#参考" class="headerlink" title="参考:"></a>参考:</h2><p><a href="https://blog.csdn.net/javazejian/article/details/52953190" target="_blank" rel="noopener">java数据结构与算法之顺序表与链表深入分析</a></p>
+<hr>
+<p>更新时间：<br>2018.4.29</p>
+</li>
+</ul>
 
       
     </div>
@@ -564,6 +569,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/01/单链表/" rel="prev" title="单链表">
+                单链表 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -649,7 +658,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -771,7 +780,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#线性表抽象数据类型概述"><span class="nav-number">1.</span> <span class="nav-text">线性表抽象数据类型概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性表的顺序存储设计和实现（顺序表）"><span class="nav-number">2.</span> <span class="nav-text">线性表的顺序存储设计和实现（顺序表）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序储存结构的设计原理"><span class="nav-number">2.1.</span> <span class="nav-text">顺序储存结构的设计原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序储存结构的实现"><span class="nav-number">2.2.</span> <span class="nav-text">顺序储存结构的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#声明接口类"><span class="nav-number">2.2.1.</span> <span class="nav-text">声明接口类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#声明一个实现接口类方法的类SeqList。及实现接口类各种方法的代码。"><span class="nav-number">2.2.2.</span> <span class="nav-text">声明一个实现接口类方法的类SeqList。及实现接口类各种方法的代码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#声明main主函数类测试实现接口和接口实现类"><span class="nav-number">2.2.3.</span> <span class="nav-text">声明main主函数类测试实现接口和接口实现类</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#线性表抽象数据类型概述"><span class="nav-number">1.</span> <span class="nav-text">线性表抽象数据类型概述</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#线性表的顺序存储设计和实现（顺序表）"><span class="nav-number">2.</span> <span class="nav-text">线性表的顺序存储设计和实现（顺序表）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序储存结构的设计原理"><span class="nav-number">2.1.</span> <span class="nav-text">顺序储存结构的设计原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#顺序储存结构的实现"><span class="nav-number">2.2.</span> <span class="nav-text">顺序储存结构的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#声明接口类"><span class="nav-number">2.2.1.</span> <span class="nav-text">声明接口类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#声明一个实现接口类方法的类SeqList。及实现接口类各种方法的代码。"><span class="nav-number">2.2.2.</span> <span class="nav-text">声明一个实现接口类方法的类SeqList。及实现接口类各种方法的代码。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#声明main主函数类测试实现接口和接口实现类"><span class="nav-number">2.2.3.</span> <span class="nav-text">声明main主函数类测试实现接口和接口实现类</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">2.3.</span> <span class="nav-text">参考:</span></a></li></ol></li></ol></div>
             
 
           </div>
